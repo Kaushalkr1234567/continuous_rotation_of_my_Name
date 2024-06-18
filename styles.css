@@ -21,28 +21,24 @@ body, html {
     color: black;
     position: relative;
     display: inline-block;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 0 #ccc,
+        2px 2px 0 #bbb,
+        3px 3px 0 #aaa,
+        4px 4px 0 #999,
+        5px 5px 0 #888,
+        6px 6px 0 #777,
+        7px 7px 0 #666,
+        8px 8px 0 #555,
+        9px 9px 0 #444,
+        10px 10px 0 #333;
     animation: rotate 5s linear infinite;
-}
-
-.name::before, .name::after {
-    content: 'KAUSHAL';
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(5px, 5px);
-    color: rgba(0, 0, 0, 0.1);
-    z-index: -1;
-}
-
-.name::after {
-    transform: translate(-5px, -5px);
 }
 
 @keyframes rotate {
     0% {
         transform: rotateX(0deg) rotateY(0deg);
     }
+
     100% {
         transform: rotateX(360deg) rotateY(360deg);
     }
